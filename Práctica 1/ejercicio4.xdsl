@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Network2" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="Coche_Maria_en_taller">
+			<state id="positivo" />
+			<state id="negativo" />
+			<probabilities>0.9 0.09999999999999998</probabilities>
+		</cpt>
+		<cpt id="Llamada_misteriosa">
+			<state id="positivo" />
+			<state id="negativo" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Maria_coge_coche">
+			<state id="positivo" />
+			<state id="negativo" />
+			<parents>Coche_Maria_en_taller Llamada_misteriosa</parents>
+			<probabilities>0.8 0.2 0.2 0.8 0.1 0.9 0.0001 0.9999</probabilities>
+		</cpt>
+		<cpt id="Robo">
+			<state id="positivo" />
+			<state id="negativo" />
+			<parents>Maria_coge_coche</parents>
+			<probabilities>0 1 1 0</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.0.3717.0" name="Network2" faultnameformat="nodestate">
+			<node id="Coche_Maria_en_taller">
+				<name>Coche Maria en taller</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>135 99 220 152</position>
+			</node>
+			<node id="Llamada_misteriosa">
+				<name>Llamada misteriosa a Maria</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>261 89 367 172</position>
+			</node>
+			<node id="Maria_coge_coche">
+				<name>Maria coge coche</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>189 234 286 294</position>
+			</node>
+			<node id="Robo">
+				<name>Robo</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>190 360 277 409</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

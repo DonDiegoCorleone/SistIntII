@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Network5" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="Node2">
+			<state id="positivo" />
+			<state id="negativo" />
+			<probabilities>0.6000000000000001 0.3999999999999999</probabilities>
+		</cpt>
+		<cpt id="Node3">
+			<state id="positivo" />
+			<state id="negativo" />
+			<probabilities>0.6000000000000001 0.3999999999999999</probabilities>
+		</cpt>
+		<noisymax id="Examen">
+			<state id="Aprobado" />
+			<state id="Suspenso" />
+			<parents>Node2 Node3</parents>
+			<strengths>0 1 0 1</strengths>
+			<parameters>0.8 0.2 0 1 0.7000000000000001 0.2999999999999999 0 1 0.09999999999999998 0.9</parameters>
+		</noisymax>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.0.3717.0" name="Network5" faultnameformat="nodestate">
+			<node id="Node2">
+				<name>Feliz</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>135 138 196 179</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node3">
+				<name>Juega a la pelota</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>352 143 410 185</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Examen">
+				<name>Examen</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>242 284 316 335</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+		</genie>
+	</extensions>
+</smile>

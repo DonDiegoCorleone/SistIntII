@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Network1" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="Gripe">
+			<state id="positivo" />
+			<state id="negativo" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Otitis">
+			<state id="positivo" />
+			<state id="negativo" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Virus">
+			<state id="positivo" />
+			<state id="negativo" />
+			<probabilities>0.2 0.8</probabilities>
+		</cpt>
+		<noisymax id="Fiebre">
+			<state id="positivo" />
+			<state id="negativo" />
+			<parents>Gripe Otitis Virus</parents>
+			<strengths>0 1 0 1 0 1</strengths>
+			<parameters>0.8 0.2 0 1 0.6000000000000001 0.3999999999999999 0 1 0.7000000000000001 0.2999999999999999 0 1 0.01000000000000001 0.99</parameters>
+		</noisymax>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.0.3717.0" name="Network1" faultnameformat="nodestate">
+			<node id="Gripe">
+				<name>Gripe</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>98 153 159 201</position>
+			</node>
+			<node id="Otitis">
+				<name>Otitis</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>204 155 258 201</position>
+			</node>
+			<node id="Virus">
+				<name>Virus</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>306 155 382 210</position>
+			</node>
+			<node id="Fiebre">
+				<name>Fiebre</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>204 284 261 325</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Network1" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="Conducto_C">
+			<state id="obstruida" />
+			<state id="correcta" />
+			<probabilities>0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="Camara_A">
+			<state id="libre_aire" />
+			<state id="con_aire" />
+			<parents>Conducto_C</parents>
+			<probabilities>0.01 0.99 0.9500000000000001 0.04999999999999993</probabilities>
+		</cpt>
+		<cpt id="Camara_B">
+			<state id="elevada" />
+			<state id="normal" />
+			<parents>Conducto_C</parents>
+			<probabilities>0.98 0.02000000000000002 0.05 0.95</probabilities>
+		</cpt>
+		<cpt id="Node4">
+			<state id="positivo" />
+			<state id="negativo" />
+			<parents>Camara_A</parents>
+			<probabilities>0.15 0.85 0.85 0.15</probabilities>
+		</cpt>
+		<cpt id="Node5">
+			<state id="positivo" />
+			<state id="negativo" />
+			<parents>Camara_B</parents>
+			<probabilities>0.8 0.2 0.1 0.9</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.0.3717.0" name="Network1" faultnameformat="nodestate">
+			<node id="Camara_A">
+				<name>Camara A</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>94 179 175 231</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Camara_B">
+				<name>Camara B</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>270 183 345 232</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Conducto_C">
+				<name>Conducto C</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>186 74 258 132</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node4">
+				<name>SensorA</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>93 289 176 341</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Node5">
+				<name>SensorB</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>266 294 347 338</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+		</genie>
+	</extensions>
+</smile>

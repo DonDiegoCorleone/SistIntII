@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Network2" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="No_gripe">
+			<state id="si" />
+			<state id="no" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="No_otitis">
+			<state id="si" />
+			<state id="no" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<noisymax id="No_fiebre">
+			<state id="si" />
+			<state id="no" />
+			<parents>No_gripe No_otitis</parents>
+			<strengths>0 1 0 1</strengths>
+			<parameters>0.8 0.2 0 1 0.6000000000000001 0.3999999999999999 0 1 0.99 0.01000000000000001</parameters>
+		</noisymax>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.0.3717.0" name="Network2" faultnameformat="nodestate">
+			<node id="No_gripe">
+				<name>No gripe</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>139 104 195 139</position>
+			</node>
+			<node id="No_otitis">
+				<name>No otitis</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>301 106 355 139</position>
+			</node>
+			<node id="No_fiebre">
+				<name>No fiebre</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>232 219 291 255</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

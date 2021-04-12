@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Network1" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Animal">
+			<state id="Wurro" />
+			<state id="Hobexas" />
+			<state id="Wackas" />
+			<probabilities>0.3333333333333334 0.3333333333333334 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="Color">
+			<state id="Rojo" />
+			<state id="Azul" />
+			<parents>Animal</parents>
+			<probabilities>1 0 0.5 0.5 0.2 0.8</probabilities>
+		</cpt>
+		<cpt id="Piel">
+			<state id="Suave_pelo" />
+			<state id="Escamosa" />
+			<parents>Animal</parents>
+			<probabilities>1 0 0 1 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="NPatas">
+			<state id="cuatro" />
+			<state id="cinco" />
+			<state id="seis" />
+			<parents>Animal</parents>
+			<probabilities>0 0.5 0.5 0.3333333333333334 0.3333333333333334 0.3333333333333333 0.5 0.5 0</probabilities>
+		</cpt>
+		<cpt id="Anomalia">
+			<state id="positivo" />
+			<state id="negativo" />
+			<parents>NPatas</parents>
+			<probabilities>0.1 0.9 0.5 0.5 0.2 0.8</probabilities>
+		</cpt>
+		<cpt id="Cojea">
+			<state id="Cojea_si" />
+			<state id="Cojea_no" />
+			<parents>NPatas Anomalia</parents>
+			<probabilities>1 0 0 1 1 0 1 0 1 0 0 1</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.0.3717.0" name="Network1" faultnameformat="nodestate">
+			<node id="Animal">
+				<name>Animal</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>337 154 453 216</position>
+			</node>
+			<node id="Color">
+				<name>Color</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>172 269 279 344</position>
+			</node>
+			<node id="Piel">
+				<name>Piel</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>345 298 458 371</position>
+			</node>
+			<node id="NPatas">
+				<name>NPatas</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>518 303 629 365</position>
+			</node>
+			<node id="Cojea">
+				<name>Cojea</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>604 420 710 485</position>
+			</node>
+			<node id="Anomalia">
+				<name>Anomalia</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>739 320 798 356</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>
